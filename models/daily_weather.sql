@@ -10,7 +10,7 @@ date(TIME) as daily_weather, WEATHER, TEMP, PRESSURE, HUMIDITY, CLOUDS --TIME fr
 
 from {{ source('DEMO', 'WEATHER') }}
 
-limit 20
+
 
 ),
 
