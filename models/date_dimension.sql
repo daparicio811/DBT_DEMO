@@ -20,3 +20,8 @@ from
 select *
 FROM CTE
 
+{{
+    config(
+        materialized='table'
+    )
+}}
