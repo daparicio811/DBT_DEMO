@@ -40,5 +40,5 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
-  date_dimention:
+  date_dimension:
     +materialized: table
