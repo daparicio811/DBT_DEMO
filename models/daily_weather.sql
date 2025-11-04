@@ -28,7 +28,7 @@ from daily_weather --previous CTE
 
 group by daily_weather, weather
 
-qualify ROW_NUMBER() OVER (PARTITION BY daily_weather ORDER BY count(weather) desc) = 1 --filters for only 1 row for each day. Using a window fuction
+qualify ROW_NUMBER() OVER (PARTITION BY daily_weather ORDER BY count(weather) desc) = 1 --filters for only 1 row for each day. "qualify" clause allows you to filter on the result of a window function in Snowflake
 
 
 )
