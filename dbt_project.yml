@@ -40,4 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    date_dimension:
+      +enabled: true
+      +materialized: table
+    
     

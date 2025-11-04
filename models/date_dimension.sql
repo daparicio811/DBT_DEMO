@@ -21,5 +21,3 @@ select *
 FROM CTE
 
 
-
-{{ config(materialized='table') }}
