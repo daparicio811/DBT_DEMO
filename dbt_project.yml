@@ -45,6 +45,10 @@ models:
     station_dimension:
       +enabled: true
       +materialized: table
+
+    trip_fact:
+      +enabled: true
+      +materialized: table
     
     # Config for all files under models/example/
     example:
