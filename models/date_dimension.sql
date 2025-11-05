@@ -7,7 +7,7 @@ WITH CTE AS (
         HOUR(TO_TIMESTAMP(STARTED_AT)) AS HOUR_STARTED_AT, {# Parse out Hour only #}
         {{get_day_type('STARTED_AT')}} AS DAY_TYPE, {#Logic is in macros folder data_utils.sql file, we are calling the macros here #}
         {{get_season('STARTED_AT')}} AS SEASON_OF_YEAR {#Logic is in macros folder data_utils.sql file, we are calling the macros here#}
-    from {{ source('DEMO', 'BIKE') }}
+    from {{ ref('stg_bike') }}
     WHERE STARTED_AT != 'started_at'  -- Filter out header row if it exists
 )
 
