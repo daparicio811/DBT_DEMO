@@ -37,6 +37,22 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
-    # Applies to all files under models/example/
+    # Config for individual model in models/ root
+    date_dimension:
+      +enabled: true
+      +materialized: table
+
+    station_dimension:
+      +enabled: true
+      +materialized: table
+
+    trip_fact:
+      +enabled: true
+      +materialized: table
+    
+    # Config for all files under models/example/
     example:
       +materialized: table
+
+    
+    

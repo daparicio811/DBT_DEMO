@@ -7,8 +7,8 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }} /*Jinja. Template language that's intop of SQL. Used a lot in dbt to do more stuff without SQL. 
-{{}} used for expressions. {%%} used for macros or statements (for loops, logic). Macros are function you can reuse.*/
+{{ config(materialized='table') }} {#Jinja. Template language that's intop of SQL. Used a lot in dbt to do more stuff without SQL. 
+{{}} used for expressions. {%%} used for macros or statements (for loops, logic). Macros are function you can reuse.#}
 
 
 with source_data as (
