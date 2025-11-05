@@ -49,6 +49,14 @@ models:
     trip_fact:
       +enabled: true
       +materialized: table
+
+    stg_bike:
+      +enabled: true
+      +materialized: table
+    
+    weather_bike_correlation:
+      +enabled: true
+      +materialized: table
     
     # Config for all files under models/example/
     example:
